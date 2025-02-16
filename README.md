@@ -1,16 +1,88 @@
-# what_bytes
+# WhatBytes - Task Management App
 
-A new Flutter project.
+A modern Flutter task management application with Firebase integration and beautiful UI.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Key Features
 
-A few resources to get you started if this is your first Flutter project:
+🎯 **Task Management**
+- Create and manage tasks with priorities (High, Medium, Low)
+- Priority-based color coding for better visualization
+- Task completion tracking
+- Swipe to delete tasks
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+⏰ **Time Organization**
+- Today's tasks view
+- Tomorrow's tasks view
+- Weekly task overview
+- Complete task history
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🔐 **Authentication**
+- Email/Password signup/login
+- Firebase authentication
+- Persistent login state
+- Secure data storage
+
+🎨 **UI Features**
+- Clean, modern interface
+- Dark/Light theme support
+- Priority-based task colors
+- Responsive design
+- Smooth animations
+
+## Tech Stack
+
+- Flutter SDK ^3.7.0
+- Firebase (Auth, Firestore)
+- Provider State Management
+- Hive Local Storage
+- Google Fonts
+- Lottie Animations
+
+## Dependencies
+yaml
+dependencies:
+flutter_bloc: ^8.1.3
+hive: ^2.2.3
+provider: ^6.1.2
+firebase_core: ^2.27.1
+firebase_auth: ^4.17.9
+cloud_firestore: ^4.15.9
+google_fonts: ^6.1.0
+lottie: ^2.4.0
+
+
+## Project Structure
+
+lib/
+├── core/
+│ ├── constants.dart
+│ ├── theme.dart
+│ └── transitions.dart
+├── data/
+│ ├── models/
+│ └── local_storage.dart
+├── presentation/
+│ ├── screens/
+│ └── widgets/
+├── providers/
+├── services/
+└── main.dart
+
+
+## Quick Start
+
+1. **Clone & Install**
+bash
+git clone [repository-url]
+cd taskmaster
+flutter pub get
+
+2. **Firebase Setup**
+- Create Firebase project
+- Add Android/iOS apps
+- Download config files
+- Enable Email auth
+
+3. **Run App**
+flutter run

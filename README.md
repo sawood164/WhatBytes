@@ -1,4 +1,4 @@
-# wha_bytes
+# what_bytes
 
 A new Flutter project.
 
